@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Vidéo avec effet split-screen</title>
+</head>
+<body>
+   <style>
+      .video-top,.video-bottom{
+         width:250px;
+         height:125px;
+         overflow:hidden;
+         position:absolute;
+         left:0px;
+      }
+      .video-top{
+         top:0px;
+         z-index:100;
+      }
+      .video-bottom{
+         top:125px;
+         z-index:10;
+      }
+      .video-top video{
+         top:0px;
+      }
+      .video-bottom video{
+         bottom:0px;
+      }
+      .video{
+         width:250px;
+         height:250px;
+         position:relative;
+         overflow:hidden;
+      }
+      .video-split{
+         top:123px;
+         height:4px;
+         width:250px;
+         background-color:black;
+         z-index:2000;
+         position:absolute;
+      }
+      .mask{
+         background-color:black;
+         position:absolute;
+         left:0px;
+         right:0px;
+         top:0px;
+         bottom:0px;
+         opacity:1;
+      }
+      .play{
+         cursor:pointer;
+      }
+      </style>
+
+      <h1>Vidéo avec effet split-screen</h1>
+
+      <div class="video">
+         <div class="video-top"></div>
+         <div class="video-split"></div>
+         <div class="video-bottom"></div>
+         <div class="mask"></div>
+      </div>
+
+      <span class="play">▶</span>
+      
+      </body>
+</body>
+</html>

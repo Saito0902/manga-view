@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>DataViz</title>
+    <title>Manga View</title>
 </head>
 
 <body>
@@ -15,21 +15,37 @@
     <section class="graph">
         <section class="g0"><img class="logo" src="images/LOGO.svg" alt=""></section>
         <section class="g1">
-            <h1>Les mangas les plus vendus au Japon chaque année</h1>
-            <svg class="histogramme" id="histogramme1" width="1000px" height="300px" viewBox="0 0 230 120"></svg>
-            <div class="infobulle"></div>
+            <div class="texte">
+                <h1>Les mangas les plus vendus <br>au Japon chaque année</h1>
+            </div>
+            <div class="histo">
+                <svg class="histogramme" id="histogramme1" width="500px" height="300px" viewBox="0 0 230 120"></svg>
+                <div class="infobulle"></div>
+            </div>
         </section>
+        
         <section class="g2">
-            <h1>Kakou kakou les ptits loulouuus</h1>
-            <svg class="histogramme" id="histogramme2" width="1000px" height="300px" viewBox="0 0 230 120"></svg>
-            <div class="infobulle"></div>
+            <div class="histo">
+                <svg class="histogramme" id="histogramme2" width="500px" height="300px" viewBox="0 0 230 120"></svg>
+                <div class="infobulle"></div> 
+            </div>
+            <div class="texte">
+                <h1>Kakou kakou les ptits loulouuus</h1>
+            </div>
+           
         </section>
+
         <section class="g3">
             <div id="chartContainer" style="height: 370px; width: 100%;"></div>
         </section>
         <section class="footer">
-            <a href="">Mentions Légales</a>
-            <img class="fuji" src="/images/fuji.svg" alt="">
+            <div class="footer-links">
+                
+                <a href="mentions.html">Salam</a>
+                <a href="mentions.html">Mentions Légales</a>
+                <a href="sources.html">Sources</a>
+            </div>
+            <img class="fuji" src="images/fuji.svg" alt="">
         </section>
 
     </section>

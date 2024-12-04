@@ -95,7 +95,7 @@ window.onload = function () {
         title: {
             text: "Année 2020",
             fontColor: "white",  // Forcer le titre en blanc
-            fontSize: 24
+            fontSize: 48,
         },
         legend: {
             fontSize: 16,
@@ -103,17 +103,17 @@ window.onload = function () {
         },
         data: [{
             type: "doughnut",
-            innerRadius: "40%",
+            innerRadius: "50%",
             showInLegend: true,
             legendText: "{label}",
             indexLabel: "{label}: #percent%",
             indexLabelFontColor: "white",
             dataPoints: [
                 { label: "Demon Slayer", y: 82345447, color: "#B0313F" },  // Couleur pour Demon Slayer
-                { label: "Kingdom", y: 8251058, color: "#292929" },         // Couleur pour Kingdom
-                { label: "One Piece", y: 7709667, color: "#6b6b6b" },       // Couleur pour One Piece
-                { label: "Haikyû!!", y: 7212099, color: "#bfbfbf" },        // Couleur pour Haikyû!!
-                { label: "Jujutsu Kaisen", y: 6702736, color: "#fefefe" }   // Couleur pour Jujutsu Kaisen
+                { label: "Kingdom", y: 8251058, color: "#3C5265" },         // Couleur pour Kingdom
+                { label: "One Piece", y: 7709667, color: "#7395B4" },       // Couleur pour One Piece
+                { label: "Haikyû!!", y: 7212099, color: "#B2D3E9" },        // Couleur pour Haikyû!!
+                { label: "Jujutsu Kaisen", y: 6702736, color: "#E0EEFF" }   // Couleur pour Jujutsu Kaisen
             ]
         }]
     };

@@ -78,21 +78,34 @@ body {
   max-width: 37%;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 1.2rem ;
+  z-index: 98;
 
 }
 
 .g1{
+  position: relative;
   display: flex;
   height: 100vh;
   flex-direction: row;
   align-items: center;
   justify-content: center;
   gap: 10%;
-  background-color: #000000;
+  /* background-image: url('images/planchedatavizbackground.png'); */
   width: 100%;
   scroll-snap-align: center;
   margin-left: 0;
   margin-right: 0;
+}
+
+.g1 img{
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  height: auto;
+  opacity: 0.05;
+  z-index: 97;
 }
 
 .g2{
@@ -151,12 +164,16 @@ h1 {
 
 
 #chartContainer .canvasjs-chart-title {
-  color: white !important;
+  color: white; 
 }
 
 /* Forcer la couleur de la légende en blanc */
 #chartContainer .canvasjs-legend .canvasjs-legend-text {
-  fill: white !important; /* Couleur SVG pour CanvasJS */
+  fill: white ; /* Couleur SVG pour CanvasJS */
+}
+
+.graph-chart{
+  z-index: 99;
 }
 
 .footer{
@@ -203,6 +220,7 @@ div.footer-links a{
   width: 40%; /* Ajuste selon tes besoins */
   max-width: 900px;
   text-align: center;
+  z-index: 99;
 }
 .histogramme {
   width: 100%; /* Pour s'adapter au conteneur */

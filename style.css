@@ -38,7 +38,7 @@ body {
 .g05 h1{
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   font-size: 5rem;
-  letter-spacing: 0.5rem;
+  letter-spacing: 0.2rem;
 }
 
 .desc{
@@ -46,10 +46,8 @@ body {
   justify-content: center;
   align-items: center;
   font-family: Arial, Helvetica, sans-serif;
-
-  padding-right: 5%;
-  padding-left: 5%;
-  font-size: 2rem;
+  max-width: 70%;
+  font-size: 1.8rem;
 }
 
 .logo{
@@ -63,11 +61,12 @@ body {
   scroll-snap-type: y mandatory;
 }
 
-
-
-.texte h1{
-  text-align: center;
+.texte p{
+  color: #b3b3b3;
+  font-family: Arial, Helvetica, sans-serif;
 }
+
+
 
 .texte{
   display: flex;
@@ -90,7 +89,6 @@ body {
   align-items: center;
   justify-content: center;
   gap: 10%;
-  /* background-image: url('images/planchedatavizbackground.png'); */
   width: 100%;
   scroll-snap-align: center;
   margin-left: 0;
@@ -102,11 +100,13 @@ body {
   left: 0;
   top: 0;
   width: 100%;
-  height: 100vh;
-  height: auto;
-  opacity: 0.05;
+  height: 100%;
+  opacity: 0.08;
+  filter: blur(5px);
   z-index: 97;
 }
+
+
 
 .g2{
   display: flex;
@@ -147,6 +147,7 @@ h1 {
   display: none;
   pointer-events: none;
   font-size: 1.3rem;
+  z-index: 99;
 }
 
 .barre:hover {
@@ -220,7 +221,7 @@ div.footer-links a{
   width: 40%; /* Ajuste selon tes besoins */
   max-width: 900px;
   text-align: center;
-  z-index: 99;
+  z-index: 98;
 }
 .histogramme {
   width: 100%; /* Pour s'adapter au conteneur */

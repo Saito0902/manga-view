@@ -14,7 +14,7 @@ svg1.innerHTML += `
 <rect class="barre" data-value="Blue Lock 10 527 146" x="176" y="-1" width="20" height="21" rx="2" style="fill:#B0313F; transform:translateY(${axeY}px) scale(1,-1)"/>
 <rect class="barre" data-value="Jujutsu kaisen 4 630 685" x="211" y="-1" width="20" height="15" rx="2" style="fill:#B0313F; transform:translateY(${axeY}px) scale(1,-1)"/>
 
-<!-- Ajout des années sous chaque barre -->
+
 <text class="annee" x="1" y="110" fill="white" font-size="8">2018</text>
 <text class="annee" x="36" y="110" fill="white" font-size="8">2019</text>
 <text class="annee" x="71" y="110" fill="white" font-size="8">2020</text>
@@ -34,7 +34,7 @@ svg2.innerHTML += `
 <rect class="barre" data-value="Demon Slayer 40" x="176" y="-1" width="20" height="40" rx="2" style="fill:#B0313F; transform:translateY(${axeY}px) scale(1,-1)"/>
 <rect class="barre" data-value="Demon Slayer 30" x="211" y="-1" width="20" height="30" rx="2" style="fill:#B0313F; transform:translateY(${axeY}px) scale(1,-1)"/>
 
-<!-- Ajout des années sous chaque barre -->
+
 <text class="annee" x="1" y="110" fill="white" font-size="8">2018</text>
 <text class="annee" x="36" y="110" fill="white" font-size="8">2019</text>
 <text class="annee" x="71" y="110" fill="white" font-size="8">2020</text>
@@ -68,6 +68,7 @@ barres1.forEach(barre => {
     });
 });
 
+// Pour le deuxième graphique
 const barres2 = svg2.querySelectorAll("rect.barre");
 barres2.forEach(barre => {
     barre.addEventListener("mouseover", (e) => {

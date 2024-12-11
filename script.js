@@ -106,14 +106,14 @@ window.onload = function () {
             innerRadius: "50%",
             showInLegend: true,
             legendText: "{label}",
-            indexLabel: "{label}: #percent%",
+            indexLabel: "{label}",
             indexLabelFontColor: "white",
             dataPoints: [
                 { label: "Demon Slayer", y: 82345447, color: "#B0313F" },  // Couleur pour Demon Slayer
                 { label: "Kingdom", y: 8251058, color: "#3C5265" },         // Couleur pour Kingdom
-                { label: "One Piece", y: 7709667, color: "#7395B4" },       // Couleur pour One Piece
-                { label: "Haikyû!!", y: 7212099, color: "#B2D3E9" },        // Couleur pour Haikyû!!
-                { label: "Jujutsu Kaisen", y: 6702736, color: "#E0EEFF" }   // Couleur pour Jujutsu Kaisen
+                { label: "One Piece", y: 7709667, color: "#4C6B88" },       // Couleur pour One Piece
+                { label: "Haikyû!!", y: 7212099, color: "#568EB2" },        // Couleur pour Haikyû!!
+                { label: "Jujutsu Kaisen", y: 6702736, color: "#72A4E0" }   // Couleur pour Jujutsu Kaisen
             ]
         }]
     };

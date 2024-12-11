@@ -35,6 +35,45 @@ body {
   scroll-snap-align: center;  
 }
 
+.images-top{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding-right: 9%;
+  padding-left: 9%;
+}
+
+.images-bot{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding-right: 9%;
+  padding-left: 9%;
+}
+
+.icone-pres{
+  width: 8%;
+  margin-bottom: -15rem;
+}
+
+.icone-pres-2{
+  width: 10%;
+  margin-bottom: -10rem;
+}
+
+.icone-pres-bot{
+  width: 8%;
+  margin-top: -15rem;
+}
+
+.icone-pres-bot-2{
+  width: 10%;
+  margin-top: -10rem;
+}
+
+
 .g05 h1{
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   font-size: 5rem;

@@ -15,40 +15,39 @@ svg1.innerHTML += `
 <rect class="barre" data-value="Jujutsu kaisen 4 630 685" x="211" y="-1" width="20" height="15" rx="2" style="fill:#B0313F; transform:translateY(${axeY}px) scale(1,-1)"/>
 
 
-<text class="annee" x="1" y="110" fill="white" font-size="8">2018</text>
-<text class="annee" x="36" y="110" fill="white" font-size="8">2019</text>
-<text class="annee" x="71" y="110" fill="white" font-size="8">2020</text>
-<text class="annee" x="106" y="110" fill="white" font-size="8">2021</text>
-<text class="annee" x="141" y="110" fill="white" font-size="8">2022</text>
-<text class="annee" x="176" y="110" fill="white" font-size="8">2023</text>
-<text class="annee" x="211" y="110" fill="white" font-size="8">2024</text>
+<text class="annee" x="5" y="100" fill="white" font-size="8">2018</text>
+<text class="annee" x="40" y="100" fill="white" font-size="8">2019</text>
+<text class="annee" x="76" y="100" fill="white" font-size="8">2020</text>
+<text class="annee" x="111" y="100" fill="white" font-size="8">2021</text>
+<text class="annee" x="146" y="100" fill="white" font-size="8">2022</text>
+<text class="annee" x="181" y="100" fill="white" font-size="8">2023</text>
+<text class="annee" x="216" y="100" fill="white" font-size="8">2024</text>
 `;
 
 // Création des barres et des années pour le deuxième graphique
 svg2.innerHTML += `
-<rect class="barre" data-value="Demon Slayer 90" x="1" y="-1" width="20" height="91" rx="2" style="fill:#B0313F; transform:translateY(${axeY}px) scale(1,-1)"/>
-<rect class="barre" data-value="Demon Slayer 70" x="36" y="-1" width="20" height="70" rx="2" style="fill:#B0313F; transform:translateY(${axeY}px) scale(1,-1)"/>
-<rect class="barre" data-value="Demon Slayer 80" x="71" y="-1" width="20" height="80" rx="2" style="fill:#B0313F; transform:translateY(${axeY}px) scale(1,-1)"/>
-<rect class="barre" data-value="Demon Slayer 60" x="106" y="-1" width="20" height="60" rx="2" style="fill:#B0313F; transform:translateY(${axeY}px) scale(1,-1)"/>
-<rect class="barre" data-value="Demon Slayer 50" x="141" y="-1" width="20" height="50" rx="2" style="fill:#B0313F; transform:translateY(${axeY}px) scale(1,-1)"/>
-<rect class="barre" data-value="Demon Slayer 40" x="176" y="-1" width="20" height="40" rx="2" style="fill:#B0313F; transform:translateY(${axeY}px) scale(1,-1)"/>
-<rect class="barre" data-value="Demon Slayer 30" x="211" y="-1" width="20" height="30" rx="2" style="fill:#B0313F; transform:translateY(${axeY}px) scale(1,-1)"/>
+<rect class="barre" data-value="One Piece 500M" x="1" y="-1" width="20" height="90" rx="2" style="fill:#B0313F; transform:translateY(${axeY}px) scale(1,-1)"/>
+<rect class="barre" data-value="One piece 500M" x="36" y="-1" width="20" height="90" rx="2" style="fill:#B0313F; transform:translateY(${axeY}px) scale(1,-1)"/>
+<rect class="barre" data-value="Demon Slayer 150M" x="71" y="-1" width="20" height="27" rx="2" style="fill:#B0313F; transform:translateY(${axeY}px) scale(1,-1)"/>
+<rect class="barre" data-value="Detective Conan 250M" x="106" y="-1" width="20" height="45" rx="2" style="fill:#B0313F; transform:translateY(${axeY}px) scale(1,-1)"/>
+<rect class="barre" data-value="Blue Lock 30M" x="141" y="-1" width="20" height="5" rx="2" style="fill:#B0313F; transform:translateY(${axeY}px) scale(1,-1)"/>
+<rect class="barre" data-value="Death Note 30M" x="176" y="-1" width="20" height="5" rx="2" style="fill:#B0313F; transform:translateY(${axeY}px) scale(1,-1)"/>
 
 
-<text class="annee" x="1" y="110" fill="white" font-size="8">2018</text>
-<text class="annee" x="36" y="110" fill="white" font-size="8">2019</text>
-<text class="annee" x="71" y="110" fill="white" font-size="8">2020</text>
-<text class="annee" x="106" y="110" fill="white" font-size="8">2021</text>
-<text class="annee" x="141" y="110" fill="white" font-size="8">2022</text>
-<text class="annee" x="176" y="110" fill="white" font-size="8">2023</text>
-<text class="annee" x="211" y="110" fill="white" font-size="8">2024</text>
+
+<text class="annee" x="3" y="100" fill="white" font-size="8">Shonen</text>
+<text class="annee" x="36" y="100" fill="white" font-size="8">Aventure</text>
+<text class="annee" x="68" y="100" fill="white" font-size="8">Fantastique</text>
+<text class="annee" x="108" y="100" fill="white" font-size="8">Mystere</text>
+<text class="annee" x="145" y="100" fill="white" font-size="8">Sport</text>
+<text class="annee" x="179" y="100" fill="white" font-size="8">Seinen</text>
 `;
 
 // Réajustement des axes pour correspondre à la nouvelle position des barres
-svg1.innerHTML += `<rect class="axe-horizontal" style="fill:white;" x="0" y="${axeY}" width="235" height="1" />
+svg1.innerHTML += `<rect class="axe-horizontal" style="fill:white;" x="0" y="${axeY}" width="250" height="1" />
 <rect class="axe-vertical" style="fill:white;" x="0" y="0" width="1" height="${axeY}" />`;
 
-svg2.innerHTML += `<rect class="axe-horizontal" style="fill:white;" x="0" y="${axeY}" width="235" height="1" />
+svg2.innerHTML += `<rect class="axe-horizontal" style="fill:white;" x="0" y="${axeY}" width="205" height="1" />
 <rect class="axe-vertical" style="fill:white;" x="0" y="0" width="1" height="${axeY}" />`;
 
 // Ajout de la gestion des événements de survol pour les graphiques

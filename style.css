@@ -11,6 +11,7 @@ body {
 
 
 .g0 {
+  position: relative;
   display: flex;
   height: 100vh;
   flex-direction: column;
@@ -22,7 +23,20 @@ body {
   scroll-snap-align: center;  
 }
 
+.g0-back{
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.08;
+  filter: blur(5px);
+  z-index: 97;
+}
+
+
 .g05 {
+  position: relative;
   display: flex;
   height: 100vh;
   flex-direction: column;
@@ -33,6 +47,18 @@ body {
   width: 100%;
   scroll-snap-align: center;  
 }
+
+.g05-back{
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.08;
+  filter: blur(5px);
+  z-index: 97;
+}
+
 
 .images-top{
   display: flex;
@@ -92,6 +118,7 @@ body {
 .logo{
   width: 33%;
   margin-top: 0;
+  z-index: 99;
 }
 
 .graph {
@@ -220,11 +247,12 @@ h1 {
 
 
 .barre {
-  transition: 0.2s ease-in-out; /* Animation lors du hover */
+  transition: 0.2s ease-in-out; 
 }
 
 .annee{
   font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.30rem;
 }
 
 
@@ -232,9 +260,9 @@ h1 {
   color: white; 
 }
 
-/* Forcer la couleur de la légende en blanc */
+
 #chartContainer .canvasjs-legend .canvasjs-legend-text {
-  fill: white ; /* Couleur SVG pour CanvasJS */
+  fill: white ; 
 }
 
 .graph-chart{
@@ -297,12 +325,85 @@ div.footer-links a{
 }
 
 .histo {
-  width: 40%; /* Ajuste selon tes besoins */
+  width: 40%; 
   max-width: 900px;
   text-align: center;
   z-index: 98;
 }
 .histogramme {
-  width: 100%; /* Pour s'adapter au conteneur */
-  height: auto; /* Garde les proportions */
+  width: 100%;
+  height: auto; 
+}
+
+.titre-mention{
+  display: flex;
+  width: 100%;
+  padding: 5%;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 21%;
+}
+
+.titre-mention h1{
+  font-size: 4rem;
+}
+
+.titre-mention img{
+  width: 100%;
+}
+
+.titre-mention a{
+  max-width: 4%;
+}
+
+.corps-mention{
+  margin-right: auto;
+  margin-left: auto;
+  display: flex;
+  justify-content: center ;
+  gap: 1rem;
+  flex-direction: column;
+  padding-left: 20%;
+  padding-right: 20%;
+  padding-top: 3%;
+  padding-bottom: 10%;
+  max-width: 85%;
+
+}
+
+.corps-mention h2{
+  font-family: Arial, Helvetica, sans-serif;
+  margin-bottom: 2%;
+}
+
+.corps-mention p{
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.corps-mention div{
+  margin-bottom: 5%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.corps-mention a{
+  text-align: center;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+  text-decoration: none;
+  color: #B0313F;
+}
+
+.corps-mention a:hover{
+  text-decoration: underline;
+}
+
+.corps-mention h3{
+  font-family: Arial, Helvetica, sans-serif ;
+}
+
+.corps-mention ul{
+  margin-left: 5%;
 }

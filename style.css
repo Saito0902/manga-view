@@ -162,6 +162,8 @@ body {
   margin-right: 0;
 }
 
+
+
 .g1 img{
   position: absolute;
   left: 0;
@@ -243,7 +245,12 @@ h1 {
 }
 
 .barre:hover {
-  opacity: 0.5;  
+  opacity: 1;
+  box-shadow: #fff 3px 3px 3px;
+}
+
+.barre:hover ~ .barre:not(:hover) {
+  opacity: 0.5; /* Les autres barres deviennent semi-transparentes */
 }
 
 
@@ -309,7 +316,7 @@ div.footer-links a{
 div.footer-links a:hover{
 background-color: #B0313F;
 padding: 1%;
-border-radius: 10px;
+border-radius: 3px;
 }
 
 

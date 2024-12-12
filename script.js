@@ -38,7 +38,7 @@ svg2.innerHTML += `
 <text class="annee" x="3" y="100" fill="white" font-size="8">Shonen</text>
 <text class="annee" x="36" y="100" fill="white" font-size="8">Aventure</text>
 <text class="annee" x="68" y="100" fill="white" font-size="8">Fantastique</text>
-<text class="annee" x="108" y="100" fill="white" font-size="8">Mystere</text>
+<text class="annee" x="108" y="100" fill="white" font-size="8">Mystère</text>
 <text class="annee" x="145" y="100" fill="white" font-size="8">Sport</text>
 <text class="annee" x="179" y="100" fill="white" font-size="8">Seinen</text>
 `;
@@ -67,6 +67,9 @@ barres1.forEach(barre => {
     });
 });
 
+
+
+
 // Pour le deuxième graphique
 const barres2 = svg2.querySelectorAll("rect.barre");
 barres2.forEach(barre => {
@@ -84,6 +87,35 @@ barres2.forEach(barre => {
     });
 });
 
+///////////////////////////////////////////
+
+const barres = document.querySelectorAll("rect.barre");
+
+// Fonction pour ajuster l'opacité et ajouter une ombre
+barres.forEach(barre => {
+    barre.addEventListener("mouseover", () => {
+        barres.forEach(b => {
+            if (b !== barre) {
+                b.style.opacity = "0.5"; // Réduire l'opacité des autres barres
+                b.style.filter = "none"; // Supprimer toute ombre pour les autres
+            }
+        });
+        barre.style.opacity = "1"; // Assurer que la barre survolée est visible
+        barre.style.filter = "drop-shadow(0 0 1px #FFA1AC)"; // Ajouter une ombre blanche
+    });
+
+    barre.addEventListener("mouseout", () => {
+        barres.forEach(b => {
+            b.style.opacity = "1"; // Réinitialiser l'opacité de toutes les barres
+            b.style.filter = "none"; // Supprimer toute ombre
+        });
+    });
+});
+
+
+
+
+////////////////////////////////////////////
 
 
 

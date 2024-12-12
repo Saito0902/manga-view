@@ -252,7 +252,7 @@ h1 {
 }
 
 .barre:hover ~ .barre:not(:hover) {
-  opacity: 0.5; /* Les autres barres deviennent semi-transparentes */
+  opacity: 0.5;
 }
 
 

@@ -2,7 +2,7 @@ const svg1 = document.querySelector("#histogramme1");
 const svg2 = document.querySelector("#histogramme2");
 const info = document.querySelector("div.infobulle");
 
-const axeY = 90; // La nouvelle position de l'axe des abscisses
+const axeY = 90;
 
 // Création des barres et des années pour le premier graphique
 svg1.innerHTML += `
@@ -43,14 +43,14 @@ svg2.innerHTML += `
 <text class="annee" x="179" y="100" fill="white" font-size="8">Seinen</text>
 `;
 
-// Réajustement des axes pour correspondre à la nouvelle position des barres
+
 svg1.innerHTML += `<rect class="axe-horizontal" style="fill:white;" x="0" y="${axeY}" width="250" height="1" />
 <rect class="axe-vertical" style="fill:white;" x="0" y="0" width="1" height="${axeY}" />`;
 
 svg2.innerHTML += `<rect class="axe-horizontal" style="fill:white;" x="0" y="${axeY}" width="205" height="1" />
 <rect class="axe-vertical" style="fill:white;" x="0" y="0" width="1" height="${axeY}" />`;
 
-// Ajout de la gestion des événements de survol pour les graphiques
+
 const barres1 = svg1.querySelectorAll("rect.barre");
 barres1.forEach(barre => {
     barre.addEventListener("mouseover", (e) => {
@@ -69,8 +69,6 @@ barres1.forEach(barre => {
 
 
 
-
-// Pour le deuxième graphique
 const barres2 = svg2.querySelectorAll("rect.barre");
 barres2.forEach(barre => {
     barre.addEventListener("mouseover", (e) => {
@@ -87,35 +85,32 @@ barres2.forEach(barre => {
     });
 });
 
-///////////////////////////////////////////
 
 const barres = document.querySelectorAll("rect.barre");
 
-// Fonction pour ajuster l'opacité et ajouter une ombre
+
 barres.forEach(barre => {
     barre.addEventListener("mouseover", () => {
         barres.forEach(b => {
             if (b !== barre) {
-                b.style.opacity = "0.5"; // Réduire l'opacité des autres barres
-                b.style.filter = "none"; // Supprimer toute ombre pour les autres
+                b.style.opacity = "0.5"; 
+                b.style.filter = "none"; 
             }
         });
-        barre.style.opacity = "1"; // Assurer que la barre survolée est visible
-        barre.style.filter = "drop-shadow(0 0 1px #FFA1AC)"; // Ajouter une ombre blanche
+        barre.style.opacity = "1"; 
+        barre.style.filter = "drop-shadow(0 0 1px #FFA1AC)";
     });
 
     barre.addEventListener("mouseout", () => {
         barres.forEach(b => {
-            b.style.opacity = "1"; // Réinitialiser l'opacité de toutes les barres
-            b.style.filter = "none"; // Supprimer toute ombre
+            b.style.opacity = "1"; 
+            b.style.filter = "none";
         });
     });
 });
 
 
 
-
-////////////////////////////////////////////
 
 
 
@@ -126,12 +121,12 @@ window.onload = function () {
         backgroundColor: "transparent",
         title: {
             text: "Zoom sur les mangas vendus en 2020",
-            fontColor: "white",  // Forcer le titre en blanc
+            fontColor: "white", 
             fontSize: 48,
         },
         legend: {
             fontSize: 16,
-            fontColor: "white"   // Forcer la légende en blanc
+            fontColor: "white"  
         },
         data: [{
             type: "doughnut",
@@ -141,11 +136,11 @@ window.onload = function () {
             indexLabel: "{label}",
             indexLabelFontColor: "white",
             dataPoints: [
-                { label: "Demon Slayer", y: 82345447, color: "#B0313F" },  // Couleur pour Demon Slayer
-                { label: "Kingdom", y: 8251058, color: "#3C5265" },         // Couleur pour Kingdom
-                { label: "One Piece", y: 7709667, color: "#4C6B88" },       // Couleur pour One Piece
-                { label: "Haikyû!!", y: 7212099, color: "#568EB2" },        // Couleur pour Haikyû!!
-                { label: "Jujutsu Kaisen", y: 6702736, color: "#72A4E0" }   // Couleur pour Jujutsu Kaisen
+                { label: "Demon Slayer", y: 82345447, color: "#B0313F" },  
+                { label: "Kingdom", y: 8251058, color: "#3C5265" },         
+                { label: "One Piece", y: 7709667, color: "#4C6B88" },       
+                { label: "Haikyû!!", y: 7212099, color: "#568EB2" },        
+                { label: "Jujutsu Kaisen", y: 6702736, color: "#72A4E0" }   
             ]
         }]
     };

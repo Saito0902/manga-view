@@ -138,7 +138,6 @@ body {
 .texte{
   display: flex;
   justify-content: center;
-  align-items: center;
   flex-direction: column;
   gap: 2.4rem;
   max-width: 37%;
@@ -215,6 +214,8 @@ body {
   scroll-snap-align: center;
 }
 
+
+
 .g3 img{
   position: absolute;
   left: 0;
@@ -233,6 +234,7 @@ h1 {
 }
 
 .infobulle {
+  font-family: Arial, Helvetica, sans-serif;
   position: absolute;
   background-color: rgb(255, 255, 255);
   color: black;

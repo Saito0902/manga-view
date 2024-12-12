@@ -125,7 +125,7 @@ window.onload = function () {
         animationEnabled: true,
         backgroundColor: "transparent",
         title: {
-            text: "Année 2020",
+            text: "Zoom sur les mangas vendus en 2020",
             fontColor: "white",  // Forcer le titre en blanc
             fontSize: 48,
         },
